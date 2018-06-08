@@ -17,7 +17,7 @@ public class Aplicacion {
         g.setCentigrados(20);
         
         //Creamos un objetos de la clase conversion
-        Conversion c=new Conversion();
+        Conversion c=new Conversion() {};
         c.setGrados(g);
         //Aplicar el Modelo
         System.out.println(c.centigradosAFarenheit());

@@ -9,10 +9,11 @@ package polimorfissmo;
  *
  * @author IrwingEdwingCarmonaS
  */
-public class Planta extends Trabajador{
+public class Honorarios extends Trabajador {
     @Override
-    public void pagar(){
-       // throw new UnsupportedOperationException("Not supported yet.");
-       System.out.println("Se va a pagar a este trabajador de plante");
+    public void pagar() {
+        //throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    System.out.println("Se le pagaran honorarios al trabajador");
     }
+    
 }

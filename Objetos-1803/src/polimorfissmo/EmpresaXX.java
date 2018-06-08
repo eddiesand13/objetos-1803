@@ -1,18 +1,18 @@
+
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
 package polimorfissmo;
-
+import java.util.*;
 /**
  *
  * @author IrwingEdwingCarmonaS
  */
-public class Planta extends Trabajador{
-    @Override
-    public void pagar(){
-       // throw new UnsupportedOperationException("Not supported yet.");
-       System.out.println("Se va a pagar a este trabajador de plante");
+public class EmpresaXX {
+    public static void main(String[] args)
+    {
+        ArrayList<Trabajador> trabajadores=new ArrayList<>();
     }
 }
