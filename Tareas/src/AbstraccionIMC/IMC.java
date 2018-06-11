@@ -80,12 +80,12 @@ public class IMC extends javax.swing.JFrame {
                         .addComponent(jLabel2)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jTextField2)))
-                .addContainerGap(72, Short.MAX_VALUE))
+                .addContainerGap(53, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(37, 37, 37)
+                .addContainerGap(37, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel1))
@@ -96,8 +96,7 @@ public class IMC extends javax.swing.JFrame {
                 .addGap(26, 26, 26)
                 .addComponent(jButton1)
                 .addGap(18, 18, 18)
-                .addComponent(jLabel3)
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addComponent(jLabel3))
         );
 
         pack();
@@ -114,11 +113,14 @@ public class IMC extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         MedidasIMC m=new MedidasIMC();
+    
         
         m.setPeso(Float.parseFloat(jTextField1.getText()));
         m.setAltura(Float.parseFloat(jTextField2.getText()));
+           // System.out.println("Peso"+m.getP);
         
         Calculo c =new Calculo();
+        c.setMedidasimc(m);
         String s = Float.toString(c.calculoIMC());
         jLabel3.setText("Tu el Indice de Masa Corporal es de "+s );
 
